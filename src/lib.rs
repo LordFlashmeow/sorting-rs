@@ -51,6 +51,18 @@
 //! let sorted: Vec<_> = unsorted.sleepsort().collect();
 //! ```
 //!
+//! ## Stalinsort
+//!
+//! Stalinsort is a very fast sorting algorithm that removes out of order items.
+//! Has time and space complexity of O(n),
+//! but you may not recognize the list afterwards.
+//!
+//! ```
+//! # use sorting::*;
+//! let mut unsorted = vec![5,7,8,1,0]
+//! unsorted.stalinsort();
+//! ```
+//!
 //! ## Miraclesort
 //!
 //! A sorting algorithm that waits for a miracle that automatically makes your vector
@@ -69,9 +81,11 @@ mod bogosort;
 mod panicsort;
 mod sleepsort;
 mod miraclesort;
+mod stalinsort;
 
 pub use crate::slowsort::*;
 pub use crate::bogosort::*;
 pub use crate::panicsort::*;
 pub use crate::sleepsort::*;
 pub use crate::miraclesort::*;
+pub use crate::stalinsort::*;
