@@ -59,7 +59,7 @@
 //!
 //! ```
 //! # use sorting::*;
-//! let mut unsorted = vec![5,7,8,1,0]
+//! let mut unsorted = vec![5,7,8,1,0];
 //! unsorted.stalinsort();
 //! ```
 //!
